@@ -9,5 +9,9 @@ jobs:
       - name: make script executable
         run: chmod +x ./add.sh
 
-      - name: run deploy script
+      - name: run add.sh with numbers
+        env: 
+          NUMBER1: 12
+          NUMBER2: 45
         run: ./add.sh  
+
