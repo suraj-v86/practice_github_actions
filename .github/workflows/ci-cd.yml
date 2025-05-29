@@ -3,4 +3,8 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps: 
-      - run: echo "Hello, Github Actions"
+      - name: make script executable
+        run: chmod +x ./add.sh
+
+      - name: run deploy script
+        run: ./add.sh  
