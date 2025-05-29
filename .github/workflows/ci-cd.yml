@@ -4,7 +4,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: checkout code
-        run: action/checkout@v3
+        run: actions/checkout@v3
        
       - name: make script executable
         run: chmod +x ./add.sh
